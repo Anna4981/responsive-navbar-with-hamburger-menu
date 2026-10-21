@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="logo">Anna<span>.dev</span></a>
+
+    <!-- Hamburger button (visible on mobile only) -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-menu" id="nav-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Dark overlay behind the mobile menu -->
+  <div class="overlay" id="overlay"></div>
+
+  <main>
+    <section id="home">
+      <h1>Responsive Navbar with Hamburger Menu</h1>
+      <p>Resize the browser below 768px to see the menu collapse into a hamburger.</p>
+    </section>
+    <section id="about"><h2>About</h2><p>Section content goes here.</p></section>
+    <section id="projects"><h2>Projects</h2><p>Section content goes here.</p></section>
+    <section id="skills"><h2>Skills</h2><p>Section content goes here.</p></section>
+    <section id="contact"><h2>Contact</h2><p>Section content goes here.</p></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
